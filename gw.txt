@@ -1,0 +1,2 @@
+  Generate neutron star of massMNS= 1.4M, black hole of massMBHdistribution from the mass range 5Mto 50Mwith Planck-2018 cos-mology parameters and Ξ0= 0.95.Take distribution of masses as for black hole asP(m)∝1/m2.35.  Call 100sources which will follow this distribution.
+  Choose objects according to Madau Dickinson +time-delay (1/td).  I willprovide a file.

@@ -54,6 +54,20 @@ plt.tight_layout()
 # plt.savefig ('kind of result.jpg')
 plt.show()
 
+#here is the new code of the new plot
+fig, ax1 = plt.subplots(figsize=(10,7))
+ax1.set_xlabel('P (m)')
+ax1.set_ylabel(r'$M_{\odot}$')
+ax1.plot(distribution(intbhlist),intbhlist,'k1')
+ax1.tick_params(axis='y')
+ax2 = ax1.twinx()
+ax2.set_ylabel('Distribution of the random masses')
+ax2.hist(distribution(intbhlist),color='skyblue',alpha=0.65)
+ax2.tick_params(axis='y')
+fig.tight_layout()
+# plt.savefig('distribution_new.jpg')
+plt.show()
+
 #sunday
 data = np.loadtxt('Merger_rate_NSBH_rate_ch_3_time_delay_1.0_power_law_1_rate_0.dat' )
 redshift = data [:,0]

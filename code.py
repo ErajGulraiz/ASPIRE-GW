@@ -77,3 +77,27 @@ plt.plot(redshift,merger_rate,'.-')
 plt.xlabel('redshift (z)')
 plt.ylabel(r'$R_{GW}(z)\ [Gpc^{-3}\ yr^{-1}]$')
 plt.show()
+
+##updated plot
+#suvodip's codes
+alpha=-2.35
+mmin=5.
+mmax=50.
+samplesize=10**6
+nc= (alpha+1)/(mmax**(alpha+1)-mmin**(alpha+1))
+ran= np.random.uniform(0,1,samplesize)
+xran= ((alpha+1)*ran/nc +mmin**(alpha+1))**(1./(alpha+1))
+#updated plot
+fig, ax1 = plt.subplots(figsize=(10,7))
+ax1.set_ylabel('P (m)')
+ax1.set_xlabel(r'$M_{\odot}$')
+ax1.plot(random_bh,distribution(random_bh),'k1')
+ax1.tick_params(axis='y')
+ax2 = ax1.twinx()
+ax2.set_ylabel('Distribution of the random masses')  # we already handled the x-label with ax1
+ax2.hist(xran,color='skyblue',alpha=0.65)
+ax2.tick_params(axis='y')
+fig.tight_layout() 
+# plt.savefig('distribution_with_help.jpg')
+plt.show()
+

@@ -1,0 +1,20 @@
+THESE COMMANDS IN THE EXACT ORDER. IF YOU ENCOUNTER ANY ERROR AND IT SAYS TO PULL, DO NOT ATTEMPT TO PULL IT MIGHT DELETE THE FILE YOU JUST PULLED FROM THE REPO AND YOUR LOCAL COMPUTER INSTEAD TRY FORCE PUSHING BY USING THE COMMAND Git push -f ... you can google. or let me know any way. 
+
+
+git status
+git add  <file name> #nobrackets
+git config --global user.email "addyouremail"
+git config --global user.name "addusername"
+git commit -m "add a comment on what is this file representing or what did you modify"
+git remote 
+git push origin main (it will ask your username and password)
+git log (check the history of commits you made)
+git status (check again if you missed adding any files)
+
+.............................
+FEW KEY POINTS :
+
+try pushing the file everytime you finalize changes in a file, and add a separate commit mentioning what you changed about it for example code file after adding the mass distribution or something in a clear way 
+add one file and add separate commit so the changes are clear per commit.. for example if you add a code file by git add, use git commit for stating the changes. then AGAIN use git add and add the figure and AGAIN git commit to add the heading of what is this figure about . 
+if you keep adding the files and after that add a commit the same commit will be written with all the files and that will have to be done all over again.
+

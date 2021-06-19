@@ -14,6 +14,8 @@ git status (check again if you missed adding any files)
 .............................
 FEW KEY POINTS :
 
+you dont need to use commands on line 6,7 everytime , first time after doing git add use these commands and commit and the keep using git add and git commit till youre done upload all the file and then use git remote and git push command.
+
 try pushing the file everytime you finalize changes in a file, and add a separate commit mentioning what you changed about it for example code file after adding the mass distribution or something in a clear way 
 add one file and add separate commit so the changes are clear per commit.. for example if you add a code file by git add, use git commit for stating the changes. then AGAIN use git add and add the figure and AGAIN git commit to add the heading of what is this figure about . 
 if you keep adding the files and after that add a commit the same commit will be written with all the files and that will have to be done all over again.

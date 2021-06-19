@@ -85,8 +85,11 @@ samplesize=10**6
 nc= (alpha+1)/(mmax**(alpha+1)-mmin**(alpha+1))
 ran= np.random.uniform(0,1,samplesize)
 xran= ((alpha+1)*ran/nc +mmin**(alpha+1))**(1./(alpha+1))
+<<<<<<< HEAD
 plt.hist(xran)
 plt.show()
+=======
+>>>>>>> c0217d890d9739709b14eecd5279c72f6313b0fb
 #updated plot
 fig, ax1 = plt.subplots(figsize=(10,7))
 ax1.set_ylabel('P (m)')
@@ -100,3 +103,7 @@ ax2.tick_params(axis='y')
 fig.tight_layout() 
 # plt.savefig('distribution_with_help.jpg')
 plt.show()
+<<<<<<< HEAD
+=======
+
+>>>>>>> c0217d890d9739709b14eecd5279c72f6313b0fb

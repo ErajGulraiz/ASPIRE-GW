@@ -43,7 +43,7 @@ plt.plot(redshift, merger_rate, z_bins, ynew,'o')
 plt.xlabel ('z')
 plt.ylabel(r'$r_{gw}$')
 
-plt.show()
+#plt.show()
 
 def integral(z):
     return 4 * np.pi * ( np.array (cosmo.differential_comoving_volume(z) / 10**9) * r_gw(z) / (1+z) )
@@ -62,5 +62,5 @@ plt.subplots(figsize=(8,7))
 plt.bar(z_[0:len(z_)-1],test,width=0.02)
 plt.xlabel ('z')
 plt.ylabel(r'$R_{gw} \ yr^{-1}$')
-plt.show()
+#plt.show()
 
